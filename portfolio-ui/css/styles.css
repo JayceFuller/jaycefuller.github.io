@@ -43,13 +43,16 @@ body {
     padding: 10px;
     border-radius: 5px;
     color: rgba(255,255,255, 0.75);
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    transition: font-size 0.3s ease, font-weight 0.3s ease; 
 }
 
-.nav-item:hover {
+.nav-item:hover, .nav-item:active, .nav-item:focus {
     background-color: rgb(156, 50, 93);
     color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .icon {

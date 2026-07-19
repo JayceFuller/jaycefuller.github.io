@@ -5,7 +5,19 @@ class WindowBox extends HTMLElement {
 
         shadow.innerHTML = `
             <style>
+                @keyframes floatUp {
+                    0% {
+                        transform: translateY(25px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+
                 .window-box {
+                    animation: floatUp 0.8s ease-out forwards; 
                     background-color: lightgray;
                     color: black;
                     border: 2px solid;
@@ -22,7 +34,10 @@ class WindowBox extends HTMLElement {
                     color: white;
                 }
                 .window-button {
-                    background-color: rgba(255, 255, 255, 0.5);
+                    background-color: rgba(255, 255, 255, 0.55);
+                }
+                .window-button:hover {
+                    background-color: rgba(255, 255, 255, 0.75);
                 }
                 .window-content {
                     padding-top: 10px;
