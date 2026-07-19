@@ -7,6 +7,7 @@
         <!-- <link rel="icon" type="image/png" href="assets.favicon.png"> -->
         <link rel="stylesheet" href="./css/styles.css">
         <script src="./js/main.js"></script>
+        <script src="./js/window-box.js"></script>
     </head>
 
     <header>
@@ -15,7 +16,12 @@
 
     <body>
         <div class="container">
-            <h1>Portfolio</h1>
+            <window-box style="width: 95%">
+                <span slot="window-title">Portfolio.txt</span>
+                <span slot="window-content">
+                    <h1>My Projects</h1>
+                </span>
+            </window-box>
 
             <div class="project">
                 <h2>QA Inspection Data Utility - Web App</h2>

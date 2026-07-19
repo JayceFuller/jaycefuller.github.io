@@ -7,6 +7,7 @@
         <!-- <link rel="icon" type="image/png" href="assets.favicon.png"> -->
         <link rel="stylesheet" href="./css/styles.css">
         <script src="./js/main.js"></script>
+        <script src="./js/window-box.js"></script>
     </head>
 
     <header>
@@ -15,19 +16,12 @@
 
     <body>
         <div class="container d-flex">
-            <img src="./assets/ProfileImage.jfif" alt="Profile picture" class="profile-img" />
-            
-            <div>
-                <h1>About Me</h1>
-                <hr />
-
-                <p class="text-center">
-                    Hello! I'm a third year student currently studying computer science at RIT. 
-                    My main interests are in web application development, human-computer interactions, and game design, 
-                    but I'm also still exploring what this field has to offer.
-                </p>
-            </div>
-            
+            <window-box style="width: 95%">
+                <span slot="window-title">AboutMe.txt</span>
+                <span slot="window-content">
+                    <h1>Jayce Fuller</h1>
+                </span>
+            </window-box>
         </div>
     </body>
 </html>
