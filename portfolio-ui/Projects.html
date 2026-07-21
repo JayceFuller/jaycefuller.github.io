@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./css/styles.css">
         <script src="./js/main.js"></script>
         <script src="./js/window-box.js"></script>
+        <script src="./js/image-carousel.js"></script>
     </head>
 
     <header>
@@ -16,52 +17,108 @@
 
     <body>
         <div class="container">
-            <window-box style="width: 95%">
+            <window-box>
                 <span slot="window-title">Portfolio.txt</span>
                 <span slot="window-content">
                     <h1>My Projects</h1>
                 </span>
             </window-box>
+            <br />
 
-            <div class="project">
-                <h2>QA Inspection Data Utility - Web App</h2>
-                <p>
-                    An internal web app developed to assist the quality assurance team at the company Crayola.
-                    Designed to allow efficient, intuitive record keeping of defects found in their manufacturing
-                    facilities, it provides both table editing capabilities as well as report generation.
-                    Records have a one to many relationship to defects, providing easier organization. Each defect can
-                    have multiple image attachments for visual representation of the defects recorded. All dropdown values
-                    in the record editor can be updated and maintained by the adminstrator without causing any harm to
-                    historical records utilizing old values.
-                </p>
-            </div>
+            <div class="container projects">
+                <window-box>
+                    <span slot="window-title">Web.app</span>
+                    <span class="d-flex" slot="window-content">
+                        <div>
+                            <h2>QA Inspection Data Utility - Web App</h2>
+                            <p>
+                                An internal web app developed to assist the quality assurance team at the company Crayola.
+                                Designed to allow efficient, intuitive record keeping of defects found in their manufacturing
+                                facilities, it provides both table editing capabilities as well as report generation.
+                                Records have a one to many relationship to defects, providing easier organization. Each defect can
+                                have multiple image attachments for visual representation of the defects recorded. All dropdown values
+                                in the record editor can be updated and maintained by the adminstrator without causing any harm to
+                                historical records utilizing old values.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <image-carousel>
+                                <img src="./assets/QA_App/HomePage.png" alt="Home page"/>
+                                <img src="./assets/QA_App/AllRecords.png" alt="Search and view all records"/>
+                                <img src="./assets/QA_App/RecordEditor.png" alt="Record editor" />
+                                <img src="./assets/QA_App/DefectEditor.png" alt="Defects table connected to the record" />
+                                <img src="./assets/QA_App/SaveFail.png" alt="Example of form error guides on record save fail" />
+                                <img src="./assets/QA_App/AttachmentEditor.png" alt="Attachment editor for a defect" />
+                                <img src="./assets/QA_App/FAQs.png" alt="FAQs page" />
+                                <img src="./assets/QA_App/BuildReportPage.png" alt="Report generation form with start and end date inputs"/>
+                                <img src="./assets/QA_App/ReportPage.png" alt="Report export"/>
+                                <img src="./assets/QA_App/ReportDetailsManager.png" alt="Report details editor"/>
+                                <img src="./assets/QA_App/DropdownManagers.png" alt="Form dropdowns editor"/>
+                            </image-carousel>
+                        </div>
+                    </span>
+                </window-box>
+                <br />
 
-            <div class="project">
-                <h2>Personal Task Manager - Desktop App</h2>
-                <p>
-                    Designed to allow users to keep their task management local to their computer without sacrificing features
-                    found in calendar and task apps by larger corporations.
-                    Both tasks and events can be stored in this app, and on initial load the user will see their to-do list for
-                    the day. Tasks can be completed with a simple check and are organized into lists. Overdue tasks will carry on
-                    to the next day with a warning label attached. Features such as task and event recurrence are planned to be
-                    added in the future, as well as full visual customizability to fit the user's aesthetic and visual preferences.
-                </p>
-            </div>
+                <window-box>
+                    <span slot="window-title">Desktop.app</span>
+                    <span class="d-flex" slot="window-content">
+                        <div>
+                            <h2>Personal Task Manager - Desktop App</h2>
+                            <p>
+                                Designed to allow users to keep their task management local to their computer without sacrificing features
+                                found in calendar and task apps by larger corporations.
+                                Both tasks and events can be stored in this app, and on initial load the user will see their to-do list for
+                                the day. Tasks can be completed with a simple check and are organized into lists. Overdue tasks will carry on
+                                to the next day with a warning label attached. Features such as task and event recurrence are planned to be
+                                added in the future, as well as full visual customizability to fit the user's aesthetic and visual preferences.
+                            </p>
+                        </div>
 
-            <div class="project">
-                <h2>Non-Profit Support Site - Web App</h2>
-                <p>
-                    An academic project developed alongside a team of my peers at RIT. Designed to hypothetically assist local Rochester
-                    pet shelters receive funding for their pets, it provides a cupboard of needs, such as pet food and toys, to the users offering their help. 
-                    Needs can be added to the helper's cart for checkout, funding the progress bar for the need items purchased. Record is kept
-                    of the helper's purchases, allowing them to earn sticker rewards for higher motivation to contribute again. An adoption page also allows
-                    shelters to post pets up for adoption, through which helper's can send in an adoption form with their information to review. The site
-                    has a unique manager login for site maintenance.
-                    <br/><br/>
-                    Ideas for further improvement were also drafted by our team. One such idea was to add logins for each shelter to manage their own
-                    specific needs and pets. Here, shelter owners would also be able to see adoption requests, making the process much more convenient on this site.
-                </p>
+                        <div>
+                            <image-carousel>
+                                <img src="./assets/NonProfitApp/dashboard.png" alt="Home page" />
+                                <img src="./assets/NonProfitApp/login.png" alt="Login page" />
+                                <img src="./assets/NonProfitApp/signUp.png" alt="Signup page" />
+                                <img src="./assets/NonProfitApp/cupboardHelperView.png" alt="Gallery of all shelter needs" />
+                                <img src="./assets/NonProfitApp/singleNeedHelperView.png" alt="Detailed view of a shelter need" />
+                                <img src="./assets/NonProfitApp/helperBasket.png" alt="User's checkout basket" />
+                                <img src="./assets/NonProfitApp/adoptPageHelper.png" alt="Gallery of all adoptable pets" />
+                                <img src="./assets/NonProfitApp/adoptableHelperView1.png" alt="Detailed view of a pet to adopt" />
+                            </image-carousel>
+                        </div>
+                    </span>
+                </window-box>
+                <br />
+
+                <window-box>
+                    <span slot="window-title">Web.app</span>
+                    <span class="d-flex" slot="window-content">
+                        <div>
+                            <h2>Non-Profit Support Site - Web App</h2>
+                            <p>
+                                An academic project developed alongside a team of my peers at RIT. Designed to hypothetically assist local Rochester
+                                pet shelters receive funding for their pets, it provides a cupboard of needs, such as pet food and toys, to the users offering their help. 
+                                Needs can be added to the helper's cart for checkout, funding the progress bar for the need items purchased. Record is kept
+                                of the helper's purchases, allowing them to earn sticker rewards for higher motivation to contribute again. An adoption page also allows
+                                shelters to post pets up for adoption, through which helper's can send in an adoption form with their information to review. The site
+                                has a unique manager login for site maintenance.
+                                <br/><br/>
+                                Ideas for further improvement were also drafted by our team. One such idea was to add logins for each shelter to manage their own
+                                specific needs and pets. Here, shelter owners would also be able to see adoption requests, making the process much more convenient on this site.
+                            </p>
+                        </div>
+
+                        <div>
+                            <image-carousel>
+
+                            </image-carousel>
+                        </div>
+                    </span>
+                </window-box>
             </div>
+            
         </div>
     </body>
 </html>
