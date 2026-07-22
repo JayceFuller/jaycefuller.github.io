@@ -9,6 +9,7 @@
         <script src="./js/main.js"></script>
         <script src="./shared/html-elements/window-box.js"></script>
         <script src="./shared/html-elements/image-carousel.js"></script>
+        <script src="./shared/html-elements/tag-element.js"></script>
     </head>
 
     <header>
@@ -17,7 +18,7 @@
 
     <body>
         <div class="container d-flex">
-            <window-box style="width: 100%">
+            <window-box style="width: 95%">
                 <span slot="window-title">Portfolio.txt</span>
                 <span slot="window-content">
                     <h1>My Projects</h1>
@@ -26,19 +27,23 @@
         </div>
 
         <div id="QAUtility" class="container d-flex">
-            <window-box style="width: 95%;">
+            <window-box style="width: 90%;">
                 <span slot="window-title">QA_Inspection_Data_Utility.app</span>
                 <span class="d-flex" slot="window-content">
                     <div>
                         <p>
                             An internal web app developed to assist the quality assurance team at the company Crayola.
                             Designed to allow efficient, intuitive record keeping of defects found in their manufacturing
-                            facilities, it provides both table editing capabilities as well as report generation.
-                            Records have a one to many relationship to defects, providing easier organization. Each defect can
-                            have multiple image attachments for visual representation of the defects recorded. All dropdown values
-                            in the record editor can be updated and maintained by the adminstrator without causing any harm to
-                            historical records utilizing old values.
+                            facilities. All dropdown fields can be easily managed by a website admin without needing to know any code.
                         </p>
+
+                        <div>
+                            <tag-button>C#</tag-button>
+                            <tag-button>Bootstrap</tag-button>
+                            <tag-button>Telerik</tag-button>
+                            <tag-button>JavaScript</tag-button>
+                            <tag-button>SQL</tag-button>
+                        </div>
                     </div>
                     
                     <div>
@@ -61,18 +66,21 @@
         </div>
 
         <div id="TaskApp" class="container d-flex">
-            <window-box style="width: 95%;">
+            <window-box style="width: 90%;">
                 <span slot="window-title">Personal_Task_Manager.app</span>
                 <span class="d-flex" slot="window-content">
                     <div>
                         <p>
-                            Designed to allow users to keep their task management local to their computer without sacrificing features
-                            found in calendar and task apps by larger corporations.
-                            Both tasks and events can be stored in this app, and on initial load the user will see their to-do list for
-                            the day. Tasks can be completed with a simple check and are organized into lists. Overdue tasks will carry on
-                            to the next day with a warning label attached. Features such as task and event recurrence are planned to be
-                            added in the future, as well as full visual customizability to fit the user's aesthetic and visual preferences.
+                            A desktop app that allow users to keep their task management local to their computer without sacrificing features
+                            found in calendar and task apps by larger corporations. A personal project intended to be shared upon completion.
+                            <br/><br/>** Currently a work in progress
                         </p>
+
+                        <div>
+                            <tag-button>Electron</tag-button>
+                            <tag-button>JavaScript</tag-button>
+                            <tag-button>SQLite</tag-button>
+                        </div>
                     </div>
 
                     <div>
@@ -85,18 +93,24 @@
         </div>
 
         <div id="PetShelters" class="container d-flex">
-            <window-box style="width: 95%;">
+            <window-box style="width: 90%;">
                 <span slot="window-title">Local_Pet_Shelter_Support.app</span>
                 <span class="d-flex" slot="window-content">
                     <div>
                         <p>
-                            An academic project developed alongside a team of my peers at RIT. Designed to hypothetically assist local Rochester
-                            pet shelters receive funding for their pets, it provides a cupboard of needs, such as pet food and toys, to the users offering their help. 
-                            Needs can be added to the helper's cart for checkout, funding the progress bar for the need items purchased. Record is kept
-                            of the helper's purchases, allowing them to earn sticker rewards for higher motivation to contribute again. An adoption page also allows
-                            shelters to post pets up for adoption, through which helper's can send in an adoption form with their information to review. The site
-                            has a unique manager login for site maintenance.
+                            An academic project developed alongside a team of peers at RIT. Designed to hypothetically assist local Rochester
+                            pet shelters receive funding, it provides a cupboard of shelter needs to the users to fund and a page of adoptable animals
+                            users can apply for. Documented sticker tiers motivate users to keep donating to achieve rewards.
                         </p>
+
+                        <div>
+                            <tag-button>Angular</tag-button>
+                            <tag-button>TypeScript</tag-button>
+                            <tag-button>REST API</tag-button>
+                            <tag-button>Java</tag-button>
+                            <tag-button>Springboot</tag-button>
+                            <tag-button>Spring Security</tag-button>
+                        </div>
                     </div>
 
                     <div>
@@ -111,6 +125,17 @@
                             <img src="./assets/NonProfitApp/adoptableHelperView1.png" alt="Detailed view of a pet to adopt" />
                         </image-carousel>
                     </div>
+                </span>
+            </window-box>
+        </div>
+
+        <div class="container d-flex">
+            <window-box style="width: 90%">
+                <span slot="window-title">Portfolio.html</span>
+
+                <span class="d-flex" slot="window-content">
+                    This site! Designed and programmed by me to display some of what I've learned thus far and
+                    to express some of my personal design aesthetic.
                 </span>
             </window-box>
         </div>

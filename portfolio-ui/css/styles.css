@@ -139,3 +139,9 @@ hr {
     font-weight: normal;
     animation: blink 1.5s step-end infinite;
 }
+
+.img-round {
+    border-radius: 100px;
+    width: 200px;
+    margin-right: 75px;
+}

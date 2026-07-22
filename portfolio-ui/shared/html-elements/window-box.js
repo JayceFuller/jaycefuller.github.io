@@ -18,7 +18,7 @@ class WindowBox extends HTMLElement {
 
                 .window-box {
                     animation: floatUp 0.8s ease-out forwards; 
-                    background-color: rgb(225, 225, 225);;
+                    background-color: rgb(225, 225, 225);
                     color: black;
                     border: 2px solid;
                     border-color: gray;
