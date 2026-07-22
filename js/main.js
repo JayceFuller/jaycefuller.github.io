@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("./shared/_Navbar.html")
+  fetch("../shared/_Navbar.html")
     .then(response => {
       if (!response.ok) {
         throw new Error("_Navbar file not found");
