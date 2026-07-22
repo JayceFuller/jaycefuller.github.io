@@ -1,13 +1,11 @@
 :root, [data-theme="dark"] {
     --bg-color: black;
     --text-color: white;
-    --window-color: lightgray;
 }
 
 [data-theme="light"] {
     --bg-color: lightgray;
     --text-color: black;
-    --window-color: white;
 }
 
 /**************************************************************
@@ -16,6 +14,11 @@
 .container {
     margin: 1em;
     justify-content: center;
+}
+
+.sub-container {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 body {
@@ -31,7 +34,7 @@ body {
     background-color: rgb(107, 25, 58);
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 10px;
     padding: 20px;
     margin: 0;
     list-style: none;
@@ -48,12 +51,26 @@ body {
     transition: font-size 0.3s ease, font-weight 0.3s ease; 
 }
 
-.nav-item:hover, .nav-item:active, .nav-item:focus {
-    background-color: rgb(156, 50, 93);
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+    .nav-item:hover, .nav-item:active, .nav-item:focus {
+        background-color: rgb(156, 50, 93);
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+.static-nav {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgba(255,255,255, 0.75);
+    font-size: 17px;
+    font-weight: normal;
 }
+
+    .static-nav:hover, .static-nav:active, .static-nav:focus {
+        color: white;
+        font-weight: bold;
+    }
 
 .icon {
     background-color: rgb(107, 25, 58);
@@ -78,6 +95,18 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+
 hr {
     border-width: 1px;
     border-color: rgb(107, 25, 58);
@@ -93,4 +122,20 @@ hr {
 
 .digital-text {
     font-family: 'Courier New', Courier, monospace;
+}
+
+.img-shadow {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.cursor {
+    display: inline-block;
+    margin-left: 4px;
+    font-weight: normal;
+    animation: blink 1.5s step-end infinite;
 }

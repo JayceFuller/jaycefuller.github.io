@@ -7,7 +7,7 @@
         <!-- <link rel="icon" type="image/png" href="assets.favicon.png"> -->
         <link rel="stylesheet" href="./css/styles.css">
         <script src="./js/main.js"></script>
-        <script src="./js/window-box.js"></script>
+        <script src="./shared/html-elements/window-box.js"></script>
     </head>
 
     <header>
@@ -15,8 +15,9 @@
     </header>
 
     <body>
-        <div class="container">
-            <window-box style="width: 95%">
+        <div class="container d-flex">
+            <window-box style="width: 50%">
+                <br/>
                 <span slot="window-title">Contact_Info.txt</span>
                 <span slot="window-content">
                     <h1>Contact Me</h1>
@@ -31,7 +32,7 @@
                             <a href="https://github.com/JayceFuller" target="_blank">GitHub</a>
                         </p>
                     </div>
-                    
+                    <br />
                 </span>
             </window-box>
         </div>

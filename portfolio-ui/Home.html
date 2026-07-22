@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jayce Fuller - About Me</title>
+        <!-- <link rel="icon" type="image/png" href="assets.favicon.png"> -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/main.js"></script>
+        <script src="./shared/html-elements/window-box.js"></script>
+        <script src="./shared/html-elements/image-carousel.js"></script>
+        <script src="./shared/html-elements/feature-element.js"></script>
+    </head>
+
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <body>
+        <div class="container d-flex">
+            <window-box style="width: 100%">
+                <span slot="window-title">Welcome.txt</span>
+                <span slot="window-content">
+                    <div class="text-center">
+                        <h1>Hi, I'm Jayce<span class="cursor">|</span></h1>
+                        <h3>Computer Science Student / Aspiring Web Developer</h3>
+                    </div>
+                </span>
+            </window-box>
+        </div>
+        <br />
+
+        <div class="container d-flex">
+            <window-box style="width: 95%">
+                <span slot="window-title">Featured_Projects.html</span>
+
+                <span slot="window-content">
+                    <h2>Featured Projects</h2>
+                    <br/>
+
+                    <div class="d-flex" style="gap: 15px">
+                        <feature-box>
+                            <span slot="feature-title">QA Inspection Data Utility</span>
+
+                            <span slot="preview-img">
+                                <img class="img-shadow" src="./assets/QA_App/AllRecords.png" alt="Preview image" width="300px"/>
+                            </span>
+
+                            <span slot="feature-content">
+                                A web app designed to assist the quality assurance team at Crayola in keeping record of
+                                defective products.<br/>
+                                
+                                <br/><a href="./Projects.html#QAUtility">View more details -></a>
+                            </span>
+                        </feature-box>
+
+                        <feature-box>
+                            <span slot="feature-title">Personal Task Manager</span>
+
+                            <span slot="preview-img">
+                                <img class="img-shadow" src="..." alt="Preview image" width="300px"/>
+                            </span>
+
+                            <span slot="feature-content">
+                                A desktop app developed to offer a local storage option for managing tasks and events.
+                                Currently a work in progress.<br/>
+
+                                <br/><a href="./Projects.html#TaskApp">View details -></a>
+                            </span>
+                        </feature-box>
+
+                        <feature-box>
+                            <span slot="feature-title">Non-Profit Pet Shelter Support</span>
+
+                            <span slot="preview-img">
+                                <img class="img-shadow" src="./assets/NonProfitApp/cupboardHelperView.png" alt="Preview image" width="300px"/>
+                            </span>
+
+                            <span slot="feature-content">
+                                A web app created to host a conceptual support site for all local Rochester pet shelters.
+                                Created as a part of a team project. <br/>
+
+                                <br/><a href="./Projects.html#PetShelters">View details -></a>
+                            </span>
+                        </feature-box>
+                    </div>
+                </span>
+            </window-box>
+        </div>
+    </body>
+</html>
