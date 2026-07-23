@@ -10,6 +10,7 @@
         <!-- <script src="./js/main.js"></script> -->
         <script src="./shared/html-elements/window-box.js"></script>
         <script src="./shared/html-elements/navbar.js"></script>
+        <script src="./shared/html-elements/tag-element.js"></script>
     </head>
 
     <header>
@@ -21,32 +22,56 @@
             <window-box>
                 <span slot="window-title">About_Me.txt</span>
                 <span class="d-flex container" slot="window-content">
-                    <div>
-                        <img class="img-round d-none d-lg-block" src="./assets/profileImage.jfif" alt="Profile picture" />
+                    <div class="d-none d-lg-block">
+                        <img class="img-round" src="./assets/profileImage.jfif" alt="Profile picture" />
+                        <br/><br/>
+                        <div>
+                            <p><strong>Skills/Experience: </strong></p>
+                            <tag-button>Web Apps</tag-button>
+                            <tag-button>Angular</tag-button>
+                            <tag-button>REST APIs</tag-button>
+                            <tag-button>Graphic Design</tag-button>
+                            <tag-button>Bootstrap</tag-button>
+                            <tag-button>HTML</tag-button>
+                            <tag-button>CSS</tag-button>
+                            <tag-button>JavaScript</tag-button>
+                        </div>
                     </div>
                     
                     <div>
                         <img class="img-round img-center d-flex d-lg-none" src="./assets/profileImage.jfif" alt="Profile picture" />
                         <h1>Jayce Fuller</h1>
                         <hr />
-                        <p class="sub-container d-flex">
-                            3rd Year Student, Rochester Institute of Technology
-                            <div>
-                                Major: Computer Science / Minor: Game Design<br/>
-                                GPA: 3.7<br/>
-                                Expected Graduation: 2029
-                            </div>
-                            <strong>Interests:</strong> Web development, desktop apps, game design, graphic design
-                            <br/><br/>
+                        <div class="sub-container d-flex">
+                            <p>
+                                Hello! I'm a third year student studying computer science at Rochester Institute of Technology with a
+                                passion for the arts. I am also pursuing a minor in game design and hope to soon minor in web development as well. 
+                                <br/><br/>
+                                My future career goals have always been to find ways that I can combine my love for programming with art. Beyond
+                                academics, I am often crafting or drawing, so it's a part of my life I can't live without. Thus far, I've found web app
+                                development to fit this dynamic very well for me, especially when I get to work full-stack.
+                                <br/><br/>
+                                Currently, I am looking for an internship during the coming Fall 2026 or Spring 2027 semester in which I can continue my pursuit
+                                in learning more about web app and general web development.
+                                <br/><br/>
+                                <strong>Links: </strong>
+                                <a href="https://www.linkedin.com/in/jayce-fuller-131807383/" target="_blank">LinkedIn</a> |
+                                <a href="https://github.com/JayceFuller" target="_blank">GitHub</a>
+                            </p>
+                        </div>
 
-                            <strong>Links:</strong>
-                            <a href="https://www.linkedin.com/in/jayce-fuller-131807383/" target="_blank">LinkedIn</a>
-                             | 
-                            <a href="https://github.com/JayceFuller" target="_blank">GitHub</a>
-
-                            <br/><br/><br/>
-                            ** Looking for an internship during the Fall 2026 or Spring 2027 semester
-                        </p>
+                        <div class="d-lg-none ">
+                            <br/>
+                            <p><strong>Skills/Experience: </strong></p>
+                            <tag-button>Web Apps</tag-button>
+                            <tag-button>Angular</tag-button>
+                            <tag-button>REST APIs</tag-button>
+                            <tag-button>Graphic Design</tag-button>
+                            <tag-button>Bootstrap</tag-button>
+                            <tag-button>HTML</tag-button>
+                            <tag-button>CSS</tag-button>
+                            <tag-button>JavaScript</tag-button>
+                        </div>
                     </div>
                 </span>
             </window-box>

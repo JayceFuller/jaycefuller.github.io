@@ -60,6 +60,7 @@ class Navbar extends HTMLElement {
                             <li class="nav-item"><a class="nav-link digital-text" href="AboutMe.html">About Me</a></li>
                             <li class="nav-item"><a class="nav-link digital-text" href="Projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link digital-text" href="Contacts.html">Contacts</a></li>
+                            <li class="nav-item"><a class="nav-link digital-text" href="./assets/documents/Fuller_Jayce_Resume_2026.pdf" download="Resume">Resume Download</a></li>
                         </ul>
                     </div>
                 </div>

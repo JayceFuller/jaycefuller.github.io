@@ -47,9 +47,11 @@ h2 {
 }
 
 h3 {
+    margin-top: 5px;
     text-align: center;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
+    color: rgb(107, 25, 58);
 }
 
 hr {
@@ -110,5 +112,9 @@ hr {
 @media(max-width: 960px) {
     .test {
         flex-direction: column;
+    }
+    .sub-container {
+        margin: 1em;
+        text-align: center;
     }
 }

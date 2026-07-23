@@ -42,6 +42,7 @@ class WindowBox extends HTMLElement {
                     padding-top: 0;
                     padding-bottom: 0;
                     font-family: sans-serif;
+                    color: black;
                     background-color: rgba(255, 255, 255, 0.55);
                 }
                 .window-button:hover {
