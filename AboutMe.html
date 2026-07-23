@@ -9,34 +9,29 @@
         <link rel="stylesheet" href="./css/styles.css">
         <!-- <script src="./js/main.js"></script> -->
         <script src="./shared/html-elements/window-box.js"></script>
+        <script src="./shared/html-elements/navbar.js"></script>
     </head>
 
     <header>
-        <nav id="navbar">
-            <ul class="nav">
-                <li><a class="static-nav digital-text" href="index.html">JayceFuller.dev</a></li>
-                <li><a class="nav-item digital-text" href="AboutMe.html">About Me</a></li>
-                <li><a class="nav-item digital-text" href="Projects.html">Projects</a></li>
-                <li><a class="nav-item digital-text" href="Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+        <nav-bar></nav-bar>
     </header>
 
     <body>
         <div class="container d-flex">
-            <window-box style="width: 95%">
+            <window-box>
                 <span slot="window-title">About_Me.txt</span>
                 <span class="d-flex container" slot="window-content">
                     <div>
-                        <img class="img-round img-fluid" src="./assets/profileImage.jfif" alt="Profile picture" />
+                        <img class="img-round d-none d-lg-block" src="./assets/profileImage.jfif" alt="Profile picture" />
                     </div>
                     
                     <div>
+                        <img class="img-round img-center d-flex d-lg-none" src="./assets/profileImage.jfif" alt="Profile picture" />
                         <h1>Jayce Fuller</h1>
-                        <hr/>
-                        <p>
+                        <hr />
+                        <p class="sub-container d-flex">
                             3rd Year Student, Rochester Institute of Technology
-                            <div class="container">
+                            <div>
                                 Major: Computer Science / Minor: Game Design<br/>
                                 GPA: 3.7<br/>
                                 Expected Graduation: 2029

@@ -4,6 +4,9 @@ class WindowBox extends HTMLElement {
         const shadow = this.attachShadow({ mode: 'open' });
 
         shadow.innerHTML = `
+            <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+            <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+
             <style>
                 @keyframes floatUp {
                     0% {
@@ -16,6 +19,9 @@ class WindowBox extends HTMLElement {
                     }
                 }
 
+                .container-fluid {
+                    padding: 0;
+                }
                 .window-box {
                     animation: floatUp 0.8s ease-out forwards; 
                     background-color: rgb(225, 225, 225);
@@ -27,30 +33,30 @@ class WindowBox extends HTMLElement {
                 .window-titlebar {
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;
                     padding: 10px;
-                    height: 20px;
                     background-color: rgb(107, 25, 58);
                     color: white;
+                    padding-bottom: 0;
                 }
                 .window-button {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    font-family: sans-serif;
                     background-color: rgba(255, 255, 255, 0.55);
                 }
                 .window-button:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                 }
                 .window-content {
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    padding-left: 25px;
-                    padding-right: 25px;
+                    padding: 20px;
                 }
                 .digital-text {
                     font-family: 'Courier New', Courier, monospace;
                 }
+
             </style>
 
-            <div class="window-box">
+            <div class="window-box container-fluid">
                 <div class="window-titlebar">
                     <p class="digital-text"><slot name="window-title"></slot></p>
 

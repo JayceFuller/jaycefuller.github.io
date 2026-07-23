@@ -14,74 +14,20 @@
 .container {
     margin: 1em;
     justify-content: center;
+    justify-self: center;
 }
 
-.sub-container {
-    margin-left: 25px;
+ .sub-container {
+    margin-left: 50px;
     margin-right: 25px;
+    justify-self: center;
+    justify-content: center;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: black;
-}
-
-/*************************************************************
- * Styles for the navigation bar
- ************************************************************/
-.nav {
-    background-color: rgb(107, 25, 58);
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
-    list-style: none;
-}
-
-.nav-item {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    color: rgba(255,255,255, 0.75);
-    font-size: 17px;
-    font-weight: normal;
-    transition: font-size 0.3s ease, font-weight 0.3s ease; 
-}
-
-    .nav-item:hover, .nav-item:active, .nav-item:focus {
-        background-color: rgb(156, 50, 93);
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-.static-nav {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    color: rgba(255,255,255, 0.75);
-    font-size: 17px;
-    font-weight: normal;
-}
-
-    .static-nav:hover, .static-nav:active, .static-nav:focus {
-        color: white;
-        font-weight: bold;
-    }
-
-.icon {
-    background-color: rgb(107, 25, 58);
-    color: rgba(255,255,255, 0.75);
-    border-radius: 100px;
-    font-size: 20px;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.icon:hover {
-    background-color: rgb(156, 50, 93);
-    color: white;
 }
 
 /****************************************************************
@@ -91,6 +37,7 @@ h1 {
     text-align: center;
     font-size: 48px;
     margin: 0;
+    font-weight: bold;
 }
 
 h2 {
@@ -106,16 +53,11 @@ h3 {
 }
 
 hr {
-    border-width: 1px;
+    border-width: 3px;
     border-color: rgb(107, 25, 58);
-}
-
-.text-center {
-    text-align: center;
-}
-
-.d-flex {
-    display: flex;
+    opacity: 1;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 
 .digital-text {
@@ -141,5 +83,32 @@ hr {
 .img-round {
     border-radius: 100px;
     width: 200px;
-    margin-right: 75px;
+}
+
+.img-center {
+    justify-self: center;
+    margin-bottom: 1em;
+}
+
+.test {
+    justify-content: center;
+    gap: 15px;
+}
+
+@media(max-width: 1060px) {
+    .shrink-fit {
+        display: flex;
+        flex-direction: column;
+    }
+    .shrink-content {
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+}
+
+@media(max-width: 960px) {
+    .test {
+        flex-direction: column;
+    }
 }

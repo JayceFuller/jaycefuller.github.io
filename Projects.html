@@ -5,54 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jayce Fuller - Portfolio</title>
         <!-- <link rel="icon" type="image/png" href="assets.favicon.png"> -->
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="./css/styles.css">
         <!-- <script src="./js/main.js"></script> -->
+         <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
         <script src="./shared/html-elements/window-box.js"></script>
         <script src="./shared/html-elements/image-carousel.js"></script>
         <script src="./shared/html-elements/tag-element.js"></script>
+        <script src="./shared/html-elements/navbar.js"></script>
     </head>
 
     <header>
-        <nav id="navbar">
-            <ul class="nav">
-                <li><a class="nav-brans digital-text" href="index.html">JayceFuller.dev</a></li>
-                <li><a class="nav-item digital-text" href="AboutMe.html">About Me</a></li>
-                <li><a class="nav-item digital-text" href="Projects.html">Projects</a></li>
-                <li><a class="nav-item digital-text" href="Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+        <nav-bar></nav-bar>
     </header>
 
     <body>
-        <div class="container d-flex">
-            <window-box style="width: 95%">
+        <div class="container">
+            <window-box>
                 <span slot="window-title">Portfolio.txt</span>
-                <span slot="window-content">
-                    <h1>My Projects</h1>
-                </span>
+                <span slot="window-content"><h1>My Projects</h1></span>
             </window-box>
         </div>
 
-        <div id="QAUtility" class="container d-flex">
-            <window-box style="width: 90%;">
+        <div id="QAUtility" style="margin: 30px">
+            <window-box>
                 <span slot="window-title">QA_Inspection_Data_Utility.app</span>
-                <span class="d-flex" slot="window-content">
-                    <div>
-                        <p>
-                            An internal web app developed to assist the quality assurance team at the company Crayola.
-                            Designed to allow efficient, intuitive record keeping of defects found in their manufacturing
-                            facilities. All dropdown fields can be easily managed by a website admin without needing to know any code.
-                        </p>
-
-                        <div>
-                            <tag-button>C#</tag-button>
-                            <tag-button>Bootstrap</tag-button>
-                            <tag-button>Telerik</tag-button>
-                            <tag-button>JavaScript</tag-button>
-                            <tag-button>SQL</tag-button>
-                        </div>
-                    </div>
-                    
+                <span class="d-flex shrink-fit" slot="window-content">
                     <div>
                         <image-carousel>
                             <img src="./assets/QA_App/HomePage.png" alt="Home page"/>
@@ -68,69 +46,70 @@
                             <img src="./assets/QA_App/DropdownManagers.png" alt="Form dropdowns editor"/>
                         </image-carousel>
                     </div>
+                    <br/>
+
+                    <div class="container shrink-content">
+                        <p>
+                            An internal web app developed to assist the quality assurance team at the company Crayola.
+                            Designed to allow efficient, intuitive record keeping of defects found in their manufacturing
+                            facilities. All dropdown fields can be easily managed by a website admin without needing to know any code.
+                        </p>
+
+                        <div>
+                            <tag-button>C#</tag-button>
+                            <tag-button>HTML</tag-button>
+                            <tag-button>CSS</tag-button>
+                            <tag-button>Bootstrap</tag-button>
+                            <tag-button>MVC</tag-button>
+                            <tag-button>Telerik</tag-button>
+                            <tag-button>JavaScript</tag-button>
+                            <tag-button>SQL</tag-button>
+                        </div>
+                    </div>
                 </span>
             </window-box>
         </div>
 
-        <div id="TaskApp" class="container d-flex">
-            <window-box style="width: 90%;">
+        <div id="TaskApp" style="margin: 30px">
+            <window-box>
                 <span slot="window-title">Personal_Task_Manager.app</span>
-                <span class="d-flex" slot="window-content">
+                <span class="d-flex shrink-fit" slot="window-content">
                     <div>
-                        <p>
-                            A desktop app that allow users to keep their task management local to their computer without sacrificing features
-                            found in calendar and task apps by larger corporations. A personal project intended to be shared upon completion.
-                            <br/><br/>** Currently a work in progress
-                        </p>
-
-                        <div>
-                            <tag-button>Electron</tag-button>
-                            <tag-button>JavaScript</tag-button>
-                            <tag-button>SQLite</tag-button>
-                        </div>
-                        <br/><br/>
-
-                        <a href="https://github.com/JayceFuller/Task_Management_Application" target="_blank">
-                            Link to GitHub repository ->
-                        </a>
-                    </div>
-
-                    <div>
+                        ** Currently a work in progress
                         <image-carousel>
                             <img src="./assets/TaskApp/TodayView.png" alt="Today's Task (WIP)" />
                             <img src="./assets/TaskApp/AllTasks.png" alt="All Tasks (WIP)" />
                         </image-carousel>
                     </div>
+                    <br/>
+                    
+                    <div class="container shrink-content">
+                        <p>
+                            A desktop app that allow users to keep their task management local to their computer without sacrificing features
+                            found in calendar and task apps by larger corporations. A personal project intended to be shared upon completion.
+                        </p>
+
+                        <div>
+                            <tag-button>Electron</tag-button>
+                            <tag-button>HTML</tag-button>
+                            <tag-button>CSS</tag-button>
+                            <tag-button>JavaScript</tag-button>
+                            <tag-button>SQLite</tag-button>
+                        </div>
+                        <br/>
+
+                        <a href="https://github.com/JayceFuller/Task_Management_Application" target="_blank">
+                            Link to GitHub repository ->
+                        </a>
+                    </div>
                 </span>
             </window-box>
         </div>
 
-        <div id="PetShelters" class="container d-flex">
-            <window-box style="width: 90%;">
+        <div id="PetShelters" style="margin: 30px">
+            <window-box>
                 <span slot="window-title">Local_Pet_Shelter_Support.app</span>
-                <span class="d-flex" slot="window-content">
-                    <div>
-                        <p>
-                            An academic project developed alongside a team of peers at RIT. Designed to hypothetically assist local Rochester
-                            pet shelters receive funding, it provides a cupboard of shelter needs to the users to fund and a page of adoptable animals
-                            users can apply for. Documented sticker tiers motivate users to keep donating to achieve rewards.
-                        </p>
-
-                        <div>
-                            <tag-button>Angular</tag-button>
-                            <tag-button>TypeScript</tag-button>
-                            <tag-button>REST API</tag-button>
-                            <tag-button>Java</tag-button>
-                            <tag-button>Springboot</tag-button>
-                            <tag-button>Spring Security</tag-button>
-                        </div>
-                        <br/><br/>
-
-                        <a href="https://github.com/JayceFuller/Non-Profit_Web_Application" target="_blank">
-                            Link to GitHub repository ->
-                        </a>
-                    </div>
-
+                <span class="d-flex shrink-fit" slot="window-content">
                     <div>
                         <image-carousel>
                             <img src="./assets/NonProfitApp/dashboard.png" alt="Home page" />
@@ -143,12 +122,37 @@
                             <img src="./assets/NonProfitApp/adoptableHelperView1.png" alt="Detailed view of a pet to adopt" />
                         </image-carousel>
                     </div>
+                    <br/>
+
+                    <div class=" container shrink-content">
+                        <p>
+                            An academic project developed alongside a team of peers at RIT. Designed to hypothetically assist local Rochester
+                            pet shelters receive funding, it provides a cupboard of shelter needs to the users to fund and a page of adoptable animals
+                            users can apply for. Documented sticker tiers motivate users to keep donating to achieve rewards.
+                        </p>
+
+                        <div>
+                            <tag-button>Angular</tag-button>
+                            <tag-button>HTML</tag-button>
+                            <tag-button>CSS</tag-button>
+                            <tag-button>TypeScript</tag-button>
+                            <tag-button>REST API</tag-button>
+                            <tag-button>Java</tag-button>
+                            <tag-button>Springboot</tag-button>
+                            <tag-button>Spring Security</tag-button>
+                        </div>
+                        <br/>
+
+                        <a href="https://github.com/JayceFuller/Non-Profit_Web_Application" target="_blank">
+                            Link to GitHub repository ->
+                        </a>
+                    </div>
                 </span>
             </window-box>
         </div>
 
-        <div class="container d-flex">
-            <window-box style="width: 90%">
+        <div style="margin: 30px">
+            <window-box>
                 <span slot="window-title">Portfolio.html</span>
 
                 <span slot="window-content">
@@ -156,7 +160,7 @@
                         This site! Designed and programmed by me to display some of what I've learned thus far and
                         to express some of my personal design aesthetic.
                     </div>
-                    <br/><br/>
+                    <br/>
 
                     <a href="https://github.com/JayceFuller/JayceFuller.github.io" target="_blank">
                         Link to GitHub repository ->

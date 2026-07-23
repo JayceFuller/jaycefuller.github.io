@@ -5,27 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jayce Fuller - About Me</title>
         <!-- <link rel="icon" type="image/png" href="assets.favicon.png"> -->
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="./css/styles.css">
         <!-- <script src="./js/main.js"></script> -->
+        <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
         <script src="./shared/html-elements/window-box.js"></script>
         <script src="./shared/html-elements/image-carousel.js"></script>
         <script src="./shared/html-elements/feature-element.js"></script>
+        <script src="./shared/html-elements/navbar.js"></script>
     </head>
 
     <header>
-        <nav id="navbar">
-            <ul class="nav">
-                <li><a class="static-nav digital-text" href="index.html">JayceFuller.dev</a></li>
-                <li><a class="nav-item digital-text" href="AboutMe.html">About Me</a></li>
-                <li><a class="nav-item digital-text" href="Projects.html">Projects</a></li>
-                <li><a class="nav-item digital-text" href="Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+        <nav-bar></nav-bar>
     </header>
 
     <body>
-        <div class="container d-flex">
-            <window-box style="width: 100%">
+        <div class="container">
+            <window-box>
                 <span slot="window-title">Welcome.txt</span>
                 <span slot="window-content">
                     <div class="text-center">
@@ -37,15 +33,15 @@
         </div>
         <br />
 
-        <div class="container d-flex">
-            <window-box style="width: 95%">
+        <div style="margin: 35px;">
+            <window-box>
                 <span slot="window-title">Featured_Projects.html</span>
 
                 <span slot="window-content">
                     <h2>Featured Projects</h2>
                     <br/>
 
-                    <div class="d-flex" style="gap: 15px">
+                    <div class="d-flex test">
                         <feature-box>
                             <span slot="feature-title">QA Inspection Data Utility</span>
 
@@ -60,22 +56,7 @@
                                 <br/><a href="./Projects.html#QAUtility">View more details -></a>
                             </span>
                         </feature-box>
-
-                        <feature-box>
-                            <span slot="feature-title">Personal Task Manager</span>
-
-                            <span slot="preview-img">
-                                <img class="img-shadow" src="./assets/TaskApp/TodayView.png" alt="Preview image" width="275px"/>
-                            </span>
-
-                            <span slot="feature-content">
-                                A desktop app developed to offer a local storage option for managing tasks and events.
-                                Currently a work in progress.<br/>
-
-                                <br/><a href="./Projects.html#TaskApp">View details -></a>
-                            </span>
-                        </feature-box>
-
+                        
                         <feature-box>
                             <span slot="feature-title">Local Pet Shelter Support</span>
 

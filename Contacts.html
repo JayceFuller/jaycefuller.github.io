@@ -5,26 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jayce Fuller - Contacts</title>
         <!-- <link rel="icon" type="image/png" href="assets.favicon.png"> -->
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="./css/styles.css">
         <!-- <script src="./js/main.js"></script> -->
+        <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
         <script src="./shared/html-elements/window-box.js"></script>
+        <script src="./shared/html-elements/navbar.js"></script>
     </head>
 
     <header>
-        <nav id="navbar">
-            <ul class="nav">
-                <li><a class="static-nav digital-text" href="index.html">JayceFuller.dev</a></li>
-                <li><a class="nav-item digital-text" href="AboutMe.html">About Me</a></li>
-                <li><a class="nav-item digital-text" href="Projects.html">Projects</a></li>
-                <li><a class="nav-item digital-text" href="Contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+        <nav-bar></nav-bar>
     </header>
 
     <body>
         <div class="container d-flex">
-            <window-box style="width: 50%">
-                <br/>
+            <window-box>
                 <span slot="window-title">Contact_Info.txt</span>
                 <span slot="window-content">
                     <h1>Contact Me</h1>
@@ -37,7 +32,6 @@
                             <a href="https://www.linkedin.com/in/jayce-fuller-131807383/" target="_blank">LinkedIn</a>
                         </p>
                     </div>
-                    <br />
                 </span>
             </window-box>
         </div>

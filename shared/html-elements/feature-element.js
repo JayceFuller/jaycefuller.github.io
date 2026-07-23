@@ -14,7 +14,8 @@ class FeatureElement extends HTMLElement {
                     border-radius: 4px;
                     box-shadow: inset;
                     width: 350px;
-                    height: 400px;
+                    min-height: 400px;
+                    justify-content: center;
                 }
                     .feature-box:hover {
                         transform: translateY(-4px);
@@ -42,14 +43,16 @@ class FeatureElement extends HTMLElement {
                 }
             </style>
 
-            <div class="feature-box">
-                <div class="feature-titlebar">
-                    <p class="digital-text"><slot name="feature-title"></slot></p>
-                </div>
+            <div style="display: flex; justify-content: center;">
+                <div class="feature-box">
+                    <div class="feature-titlebar">
+                        <p class="digital-text"><slot name="feature-title"></slot></p>
+                    </div>
 
-                <div class="feature-content">
-                    <slot name="preview-img"></slot>
-                    <p class="digital-text"><slot name="feature-content"></slot></p>
+                    <div class="feature-content">
+                        <slot name="preview-img"></slot>
+                        <p class="digital-text"><slot name="feature-content"></slot></p>
+                    </div>
                 </div>
             </div>
         `;

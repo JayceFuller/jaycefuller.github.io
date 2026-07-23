@@ -7,11 +7,9 @@ class ImageCarousel extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>
                 .carousel-container {
-                    position: relative;
                     overflow: hidden;
-                    max-width: 500px;
+                    max-width: 600px;
                     width: 100%;
-                    margin-left: 25px;
                     border-radius: 4px;
                     background-color: rgb(107, 25, 58);
                     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
@@ -24,8 +22,8 @@ class ImageCarousel extends HTMLElement {
                     transition: transform 0.4s ease-in-out;
                 }
                 ::slotted(img) {
-                    width: 500px;
-                    height: 275px;
+                    width: 600px;
+                    height: 350px;
                     flex-shrink: 0;
                     object-fit: cover;
                 }
@@ -41,15 +39,22 @@ class ImageCarousel extends HTMLElement {
                 .carousel-btn:hover {
                     background-color: rgba(255, 255, 255, 0.75);
                 }
+
+                @media(max-width: 768px) {
+                    .carousel-container { max-width: 365px }
+                    ::slotted(img) { width: 365px;  height: 215px; }
+                }
             </style>
 
-            <div class="carousel-container" role="region">
-                <div class="carousel-slides">
-                    <slot></slot>
-                </div>
-                <div class="buttons">
-                    <button class="carousel-btn prev">&#10094;</button>
-                    <button class="carousel-btn next">&#10095;</button>
+            <div style="display: flex; justify-content:center;">
+                <div class="carousel-container" role="region">
+                    <div class="carousel-slides">
+                        <slot></slot>
+                    </div>
+                    <div class="buttons">
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
                 </div>
             </div>
         `
