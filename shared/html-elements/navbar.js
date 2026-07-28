@@ -56,7 +56,7 @@ class Navbar extends HTMLElement {
 
             <nav class="navbar navbar-dark custom-nav navbar-expand-lg" role="navigation">
                 <div class="container-fluid">
-                    <a class="navbar-brand digital-text" href="index.html">JayceFuller.dev</a>
+                    <a class="navbar-brand digital-text" href="index">JayceFuller.dev</a>
                     
                     <button class="navbar-toggler" type="button" id="navToggle" data-bs-toggle="collapse" data-bs-target="#navbar">
                         <span class="navbar-toggler-icon"></span>
@@ -64,9 +64,9 @@ class Navbar extends HTMLElement {
 
                     <div class="collapse navbar-collapse" id="navbar">
                         <ul class="navbar-nav gap-lg-3">
-                            <li class="nav-item px-2"><a class="nav-link digital-text" href="AboutMe">About Me</a></li>
-                            <li class="nav-item px-2"><a class="nav-link digital-text" href="Projects">Projects</a></li>
-                            <li class="nav-item px-2"><a class="nav-link digital-text" href="Contacts">Contacts</a></li>
+                            <li class="nav-item px-2"><a class="nav-link digital-text" href="about-me">About Me</a></li>
+                            <li class="nav-item px-2"><a class="nav-link digital-text" href="projects">Projects</a></li>
+                            <li class="nav-item px-2"><a class="nav-link digital-text" href="contact">Contacts</a></li>
                             <li class="nav-item px-2"><a class="nav-link digital-text" href="./assets/documents/Fuller_Jayce_Resume_2026.pdf" download="Resume">Resume Download</a></li>
                         </ul>
                     </div>
