@@ -50,6 +50,7 @@ class Navbar extends HTMLElement {
                     
                 @media(max-width: 990px) {
                     .navbar-collapse { padding-top: 10px; }
+                    .nav-item:hover { transform: scale(1.01); }
                 }
             </style>
 
@@ -62,10 +63,10 @@ class Navbar extends HTMLElement {
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item px-2"><a class="nav-link digital-text" href="AboutMe.html">About Me</a></li>
-                            <li class="nav-item px-2"><a class="nav-link digital-text" href="Projects.html">Projects</a></li>
-                            <li class="nav-item px-2"><a class="nav-link digital-text" href="Contacts.html">Contacts</a></li>
+                        <ul class="navbar-nav gap-lg-3">
+                            <li class="nav-item px-2"><a class="nav-link digital-text" href="AboutMe">About Me</a></li>
+                            <li class="nav-item px-2"><a class="nav-link digital-text" href="Projects">Projects</a></li>
+                            <li class="nav-item px-2"><a class="nav-link digital-text" href="Contacts">Contacts</a></li>
                             <li class="nav-item px-2"><a class="nav-link digital-text" href="./assets/documents/Fuller_Jayce_Resume_2026.pdf" download="Resume">Resume Download</a></li>
                         </ul>
                     </div>
@@ -89,27 +90,11 @@ class Navbar extends HTMLElement {
 
         const currLocation = window.location.pathname;
         const navLinks = shadow.querySelectorAll('.navbar-nav .nav-link');
-        const navbarBrand = shadow.querySelectorAll('.navbar-brand');
-
-        // const brandPath = new URL(navbarBrand.href).pathname;
-        // if (currLocation == brandPath || currLocation === '/') {
-        //     navbarBrand.classList.add('active');
-        // }
-
-        ///Removes the .html tag from window.location
-        const normalizePath = (href) => {
-            try {
-                const path = new URL(href, window.location.origin).pathname;
-                return path.replace(/\/$/, "").replace(/\.html$/, "");
-            } catch (e) {
-                return '';
-            }
-        };
 
         navLinks.forEach(link => {
             const linkPath = new URL(link.href).pathname;
 
-            if (currLocation === normalizePath(linkPath)) {
+            if (currLocation === linkPath) {
                 link.classList.add('active');
                 link.closest('.nav-item').classList.add('active');
                 link.setAttribute('aria-current', 'page');
