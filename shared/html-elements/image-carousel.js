@@ -52,8 +52,8 @@ class ImageCarousel extends HTMLElement {
                         <slot></slot>
                     </div>
                     <div class="buttons">
-                        <button class="carousel-btn prev">&#10094;</button>
-                        <button class="carousel-btn next">&#10095;</button>
+                        <button class="carousel-btn prev" title="Previous image">&#10094;</button>
+                        <button class="carousel-btn next" title="Next image">&#10095;</button>
                     </div>
                 </div>
             </div>

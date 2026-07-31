@@ -43,10 +43,10 @@ class FootNote extends HTMLElement {
                     <p>Programmer, Web Developer</p>
                 </div>
                 <div class="links">
-                    <a href="https://www.linkedin.com/in/jayce-fuller-131807383/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/jayce-fuller-131807383/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                         <i class="fa-brands fa-linkedin fa-3x"></i>
                     </a>
-                    <a href="https://github.com/JayceFuller" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/JayceFuller" target="_blank" rel="noopener noreferrer" title="Github">
                         <i class="fa-brands fa-github fa-3x"></i>
                     </a>
                 </div>
