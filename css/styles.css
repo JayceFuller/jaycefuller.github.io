@@ -46,16 +46,22 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
     margin: 0;
+    font-weight: bold;
 }
 
 h3 {
     margin-top: 5px;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: rgb(107, 25, 58);
+}
+
+h4 {
+    text-align: left;
+    font-size: 20px;
 }
 
 hr {
@@ -66,8 +72,16 @@ hr {
     margin-right: 75px;
 }
 
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .digital-text {
     font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .img-shadow {

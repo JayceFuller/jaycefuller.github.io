@@ -22,6 +22,7 @@ class FeatureElement extends HTMLElement {
                         box-shadow: 0 4px 12px rgba(0,0,0,0.25);
                         transition: all 0.2s ease-in-out;
                     }
+
                 .feature-titlebar {
                     display: flex;
                     justify-content: space-between;
@@ -32,14 +33,20 @@ class FeatureElement extends HTMLElement {
                     background-color: rgb(107, 25, 58);
                     color: white;
                 }
+
                 .feature-content {
                     padding-top: 10px;
                     padding-bottom: 10px;
                     padding-left: 25px;
                     padding-right: 25px;
                 }
+
                 .digital-text {
                     font-family: 'Courier New', Courier, monospace;
+                }
+
+                @media(max-width: 450px) {
+                    .feature-box { width: 275px; }
                 }
             </style>
 

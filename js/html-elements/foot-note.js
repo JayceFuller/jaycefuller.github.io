@@ -23,6 +23,14 @@ class FootNote extends HTMLElement {
                 .footnotes path {
                     color: rgba(255, 255, 255, 0.90);
                 }
+
+                .footnotes h2 {
+                    text-align: left;
+                }
+
+                .footnotes .digital-text {
+                    font-size: 20px;
+                }
                 
                 .links a {
                     text-decoration: none;
@@ -40,7 +48,7 @@ class FootNote extends HTMLElement {
             <div class="footnotes">
                 <div class="title digital-text">
                     <h2>JayceFuller.dev</h2>
-                    <p>Programmer, Web Developer</p>
+                    <p class="digital-text">Computer Science Student / Web Developer</p>
                 </div>
                 <div class="links">
                     <a href="https://www.linkedin.com/in/jayce-fuller-131807383/" target="_blank" rel="noopener noreferrer" title="LinkedIn">

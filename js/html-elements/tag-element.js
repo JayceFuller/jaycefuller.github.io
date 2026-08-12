@@ -18,6 +18,7 @@ class TagElement extends HTMLElement {
                     .tag:hover {
                         background-color: rgb(156, 50, 93);
                         color: white;
+                        font-weight: bold;
                         transform: translateY(-1px);
                         box-shadow: 0 4px 12px rgba(0,0,0,0.25);
                         transition: all 0.2s ease-in-out;

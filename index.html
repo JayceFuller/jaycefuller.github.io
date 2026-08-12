@@ -6,15 +6,14 @@
         <meta name="google-site-verification" content="gOW5riH0rw7VQzf8EMQ7Ohs9ogVsRftV0-5xQpiOBLc" />
         <title>Home | JayceFuller.dev</title>
         
-        <!-- <link rel="icon" type="image/png" href="assets.favicon.png"> -->
         <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="./css/styles.css">
         <script src="./js/fontawesome/all.min.js"></script>
-        <script src="./shared/html-elements/window-box.js"></script>
-        <script src="./shared/html-elements/image-carousel.js"></script>
-        <script src="./shared/html-elements/feature-element.js"></script>
-        <script src="./shared/html-elements/navbar.js"></script>
-        <script src="./shared/html-elements/foot-note.js"></script>
+        <script src="./js/html-elements/window-box.js"></script>
+        <script src="./js/html-elements/image-carousel.js"></script>
+        <script src="./js/html-elements/feature-element.js"></script>
+        <script src="./js/html-elements/navbar.js"></script>
+        <script src="./js/html-elements/foot-note.js"></script>
     </head>
 
     <header>
@@ -28,7 +27,7 @@
                 <span slot="window-content">
                     <div class="text-center">
                         <h1>Hi, I'm Jayce<span class="cursor">|</span></h1>
-                        <h3>Computer Science Student / Aspiring Web Developer</h3>
+                        <h3>Computer Science Student / Web Developer</h3>
                         <br/>
                         <p>
                             I enjoy building web applications and finding ways to incorporate my love for art and design 
@@ -43,7 +42,7 @@
 
         <div style="margin: 35px;">
             <window-box>
-                <span slot="window-title">Featured_Projects.html</span>
+                <span slot="window-title">Featured.html</span>
 
                 <span slot="window-content">
                     <h2>Featured Projects</h2>
@@ -54,12 +53,14 @@
                             <span slot="feature-title">QA Inspection Data Utility</span>
 
                             <span slot="preview-img">
-                                <img class="img-shadow" src="./assets/QA_App/AllRecords.png" alt="Preview image" width="300px"/>
+                                <img class="img-shadow img-fluid" src="./assets/QA_App/AllRecords.png" alt="Preview image" width="300px"/>
                             </span>
 
                             <span slot="feature-content">
-                                A web app designed to assist the quality assurance team at Crayola in keeping record of
-                                defective products.<br/>
+                                <p>
+                                    A web app designed to assist the quality assurance team at Crayola in keeping record of
+                                    defective products.
+                                </p>
                                 
                                 <br/><a href="./projects#QAUtility" title="View details">View more details -></a>
                             </span>
@@ -69,12 +70,14 @@
                             <span slot="feature-title">Local Pet Shelter Support</span>
 
                             <span slot="preview-img">
-                                <img class="img-shadow" src="./assets/NonProfitApp/cupboardHelperView.png" alt="Preview image" width="300px"/>
+                                <img class="img-shadow img-fluid" src="./assets/NonProfitApp/cupboardHelperView.png" alt="Preview image" width="300px"/>
                             </span>
 
                             <span slot="feature-content">
-                                A web app created to host a conceptual support site for all local Rochester pet shelters.
-                                Created as a part of a team project. <br/>
+                                <p>
+                                    A web app created to host a conceptual support site for all local Rochester pet shelters.
+                                    Created as a part of a team project.
+                                </p>
 
                                 <br/><a href="./projects#PetShelters" title="View details">View details -></a>
                             </span>

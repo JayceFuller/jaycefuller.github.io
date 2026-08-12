@@ -22,6 +22,7 @@ class WindowBox extends HTMLElement {
                 .container-fluid {
                     padding: 0;
                 }
+
                 .window-box {
                     animation: floatUp 0.8s ease-out forwards; 
                     background-color: rgb(225, 225, 225);
@@ -30,6 +31,7 @@ class WindowBox extends HTMLElement {
                     border-color: gray;
                     box-shadow: inset;
                 }
+
                 .window-titlebar {
                     display: flex;
                     justify-content: space-between;
@@ -38,22 +40,29 @@ class WindowBox extends HTMLElement {
                     color: white;
                     padding-bottom: 0;
                 }
+
                 .window-button {
                     padding-top: 0;
                     padding-bottom: 0;
                     font-family: sans-serif;
                     color: black;
                     background-color: rgba(255, 255, 255, 0.55);
+                    cursor: default;
+                    line-height: 1.3;
                 }
-                .window-button:hover {
-                    background-color: rgba(255, 255, 255, 0.75);
-                }
+                    .window-button:hover {
+                        cursor: default;
+                    }
+
                 .window-content {
                     padding: 20px;
                 }
+
                 .digital-text {
                     font-family: 'Courier New', Courier, monospace;
                 }
+
+                .buttons { gap: 8px; }
 
             </style>
 
@@ -61,10 +70,10 @@ class WindowBox extends HTMLElement {
                 <div class="window-titlebar">
                     <p class="digital-text"><slot name="window-title"></slot></p>
 
-                    <div>
-                        <button class="window-button">–</button>
-                        <button class="window-button">&#9633;</button>
-                        <button class="window-button">x</button>
+                    <div class="buttons">
+                        <button class="window-button" disabled>–</button>
+                        <button class="window-button" disabled>&#9633;</button>
+                        <button class="window-button" disabled>x</button>
                     </div>
                 </div>
 
