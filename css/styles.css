@@ -58,7 +58,7 @@ h2 {
     font-weight: bold;
 }
 
-h3 {
+.subheader {
     margin-top: 5px;
     text-align: center;
     font-size: 22px;
