@@ -48,7 +48,7 @@ class FootNote extends HTMLElement {
             <div class="footnotes">
                 <div class="title digital-text">
                     <h2>JayceFuller.dev</h2>
-                    <p class="digital-text">Computer Science Student / Web Developer</p>
+                    <p class="digital-text">Computer Science Student / Web Development Focus</p>
                 </div>
                 <div class="links">
                     <a href="https://www.linkedin.com/in/jayce-fuller-131807383/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
