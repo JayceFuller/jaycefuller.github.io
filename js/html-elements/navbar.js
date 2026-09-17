@@ -45,7 +45,7 @@ class Navbar extends HTMLElement {
                     }
 
                 .digital-text {
-                    font-family: 'Courier New', Courier, monospace;
+                    font-family: monospace;
                 }
                     
                 @media(max-width: 990px) {

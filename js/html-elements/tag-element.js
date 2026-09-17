@@ -11,7 +11,7 @@ class TagElement extends HTMLElement {
                     text-align: center;
                     border-radius: 5px;
                     padding: 10px;
-                    font-family: 'Courier New', Courier, monospace;
+                    font-family: monospace;
                     font-size: 16px;
                     margin-bottom: 6px;
                 }

@@ -30,6 +30,7 @@ class WindowBox extends HTMLElement {
                     border: 2px solid;
                     border-color: gray;
                     box-shadow: inset;
+                    border-radius: 3px;
                 }
 
                 .window-titlebar {
@@ -39,12 +40,13 @@ class WindowBox extends HTMLElement {
                     background-color: rgb(107, 25, 58);
                     color: white;
                     padding-bottom: 0;
+                    border-bottom: 1px darkgray solid;
                 }
 
                 .window-button {
                     padding-top: 0;
                     padding-bottom: 0;
-                    font-family: sans-serif;
+                    font-family: monospace;
                     color: black;
                     background-color: rgba(255, 255, 255, 0.55);
                     cursor: default;
@@ -59,7 +61,7 @@ class WindowBox extends HTMLElement {
                 }
 
                 .digital-text {
-                    font-family: 'Courier New', Courier, monospace;
+                    font-family: monospace;
                 }
 
                 .buttons { gap: 8px; }
@@ -71,7 +73,7 @@ class WindowBox extends HTMLElement {
                     <p class="digital-text"><slot name="window-title"></slot></p>
 
                     <div class="buttons">
-                        <button class="window-button" disabled>–</button>
+                        <button class="window-button" disabled>&#8212;</button>
                         <button class="window-button" disabled>&#9633;</button>
                         <button class="window-button" disabled>x</button>
                     </div>
